@@ -11,7 +11,6 @@ const Hero = () => (
         site {
           siteMetadata {
             title
-            tagline
             phone
             phoneFormatted
             email
@@ -34,9 +33,6 @@ const Hero = () => (
               /> */}
               {data.site.siteMetadata.title}
             </h1>
-            <p className="leading-tight mb-8 normal-case text-3xl md:text-4xl text-white">
-              {data.site.siteMetadata.tagline}
-            </p>
             <Button to="/#" white>
               Call to action
             </Button>

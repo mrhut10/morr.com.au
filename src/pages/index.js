@@ -1,21 +1,25 @@
 import React from 'react';
 // import { Link } from 'gatsby';
 
-import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Services from '../components/Services';
-import Contact from '../components/Contact';
+import Logo from '../images/logo.svg';
 
 const IndexPage = () => (
-  <Layout>
+  <main className="flex flex-1 flex-col items-center justify-center min-h-screen text-gray-700">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Hero />
-    <About />
-    <Services />
-    <Contact />
-  </Layout>
+    <img className="h-32 sm:h-64 mb-12" src={Logo} alt="" />
+    <h1 className="text-2xl">Website coming soon</h1>
+    <p>
+      Website by{' '}
+      <a
+        className="font-bold text-green-500"
+        href="https://phirannodesigns.com.au"
+        rel="nofollow"
+      >
+        Phiranno Designs
+      </a>
+    </p>
+  </main>
 );
 
 export default IndexPage;

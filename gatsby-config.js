@@ -1,14 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Phiranno Designs Template`,
-    description: `Website meta description for SEO.`,
-    tagline: `No project is too much for our team`, // used in GraphQL query in Hero component
-    email: `hello@phirannodesigns.com.au`, // used in GraphQL queries so address only needs to be entered in one place
-    phone: `+61400000000`, // e.g. +61400000000
-    phoneFormatted: `0400 000 000`, // e.g. 0400 000 000
-    siteUrl: `https://www.phirannodesigns.com.au`, // used for `gatsby-plugin-sitemap` to generate correct URLs
+    title: `Morr Homes and Projects`,
+    description: ``,
+    email: ``, // used in GraphQL queries so address only needs to be entered in one place
+    phone: ``, // e.g. +61400000000
+    phoneFormatted: ``, // e.g. 0400 000 000
+    siteUrl: `https://www.morr.com.au`, // used for `gatsby-plugin-sitemap` to generate correct URLs
     author: ``, // e.g. @phirannodesigns — used for twitter cards in SEO component
-    facebook: `https://www.facebook.com/phirannodesigns`, // e.g. https://www.facebook.com/phirannodesigns — used in GraphQL queries so address only needs to be entered in one place
+    facebook: ``, // e.g. https://www.facebook.com/phirannodesigns — used in GraphQL queries so address only needs to be entered in one place
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,10 +26,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#3E8D90`,
-        theme_color: `#3E8D90`,
+        background_color: `#62B257`,
+        theme_color: `#62B257`,
         display: `minimal-ui`,
-        icon: `src/images/logo-dark.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/icon.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,
