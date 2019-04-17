@@ -8,7 +8,7 @@ const IndexPage = () => (
   <main className="flex flex-1 flex-col items-center justify-center min-h-screen text-gray-700">
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <img className="h-32 sm:h-64 mb-12" src={Logo} alt="" />
-    <h1 className="text-2xl">Website coming soon</h1>
+    <h1 className="text-2xl">Under construction</h1>
     <p>
       Website by{' '}
       <a

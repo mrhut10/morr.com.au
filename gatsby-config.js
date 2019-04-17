@@ -29,7 +29,7 @@ module.exports = {
         background_color: `#62B257`,
         theme_color: `#62B257`,
         display: `minimal-ui`,
-        icon: `src/images/icon.svg`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,
