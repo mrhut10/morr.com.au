@@ -12,17 +12,17 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <div className="flex flex-1 flex-col items-center justify-center">
+        <div className="flex flex-1 flex-col items-center justify-center p-4">
           <img className="h-32 sm:h-64 mb-12 mt-auto" src={Logo} alt="" />
           <h1 className="font-semibold text-2xl">Under construction</h1>
-          <div className="flex">
-            <p>
+          <div className="flex flex-wrap">
+            <p className="mr-2">
               Phone:{' '}
               <a className="font-bold text-green-500" href={phone}>
                 {phoneFormatted}
               </a>
             </p>
-            <p className="ml-2">
+            <p>
               Email:{' '}
               <a className="font-bold text-green-500" href={email}>
                 {email}
