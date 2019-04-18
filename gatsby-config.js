@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Morr Homes and Projects`,
     description: ``,
-    email: ``, // used in GraphQL queries so address only needs to be entered in one place
-    phone: ``, // e.g. +61400000000
-    phoneFormatted: ``, // e.g. 0400 000 000
+    email: `admin@morrproperty.com.au`, // used in GraphQL queries so address only needs to be entered in one place
+    phone: `+61265839618`, // e.g. +61400000000
+    phoneFormatted: `02 6583 9618`, // e.g. 0400 000 000
     siteUrl: `https://www.morr.com.au`, // used for `gatsby-plugin-sitemap` to generate correct URLs
     author: ``, // e.g. @phirannodesigns — used for twitter cards in SEO component
     facebook: ``, // e.g. https://www.facebook.com/phirannodesigns — used in GraphQL queries so address only needs to be entered in one place

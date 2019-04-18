@@ -4,7 +4,6 @@ import React from 'react';
 // import Footer from '../Footer';
 
 import '../../css/tailwind.css';
-import '../../css/typography.css';
 import '../../css/global.css';
 
 const Layout = ({ children }) => (
