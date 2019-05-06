@@ -39,7 +39,7 @@ export default class ContactForm extends React.Component {
         data-netlify="true"
         onSubmit={this.handleSubmit}
         action="/success/"
-        className="w-full"
+        className="max-w-md w-full"
         method="post"
         name="contact"
       >
@@ -59,7 +59,7 @@ export default class ContactForm extends React.Component {
               Name:
             </span>
             <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-brand"
               id="name"
               name="name"
               onChange={this.handleChange}
@@ -76,7 +76,7 @@ export default class ContactForm extends React.Component {
               Email address:
             </span>
             <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-brand"
               id="email"
               name="email"
               onChange={this.handleChange}
@@ -93,7 +93,7 @@ export default class ContactForm extends React.Component {
               Phone number:
             </span>
             <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-brand"
               id="phone"
               name="phone"
               onChange={this.handleChange}
@@ -109,7 +109,7 @@ export default class ContactForm extends React.Component {
               Message:
             </span>
             <textarea
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-blue-600"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-brand"
               id="message"
               name="message"
               onChange={this.handleChange}
@@ -119,18 +119,10 @@ export default class ContactForm extends React.Component {
           </label>
         </div>
 
-        <div className="flex items-center justify-between mb-6">
-          {/* Clear */}
-          <input
-            className="bg-red-100 hover:bg-red-700 cursor-pointer font-semibold leading-none mr-2 px-4 py-2 rounded-full text-red-700 hover:text-white text-xs tracking-wide uppercase"
-            onChange={this.handleChange}
-            type="reset"
-            value="Clear form"
-          />
-
+        <div className="mb-6">
           {/* Submit */}
           <button
-            className="bg-blue-700 hover:bg-blue-600 cursor-pointer font-semibold leading-none px-4 py-2 rounded-full text-white text-xs tracking-wide uppercase"
+            className="bg-green-brand hover:bg-green-400 cursor-pointer font-semibold leading-none px-4 py-2 text-white text-xs tracking-wide uppercase"
             type="submit"
           >
             Send

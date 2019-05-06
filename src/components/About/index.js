@@ -1,25 +1,26 @@
 import React from 'react';
-import Image from './Image';
 
 const About = () => (
-  <div id="about" className="flex flex-wrap-reverse">
-    <div className="flex h-64 md:h-auto overflow-hidden w-full md:w-1/2">
-      <div className="h-full w-full relative">
-        <div className="image-container">
-          <Image />
-        </div>
-      </div>
-    </div>
-    <div className="flex items-center justify-center w-full md:w-1/2">
-      <div className="max-w-md px-4 py-24 w-full">
-        <h2 className="font-bold mb-4 text-4xl text-gray-800">About</h2>
+  <div id="about" className="flex flex-wrap max-w-1920px mx-auto w-full">
+    <div className="p-4">
+      <h2 className="font-bold text-green-brand text-4xl uppercase">About</h2>
+      <div className="border-green-brand border-l-4 max-w-lg pl-4 text-gray-600">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          facilis ipsa temporibus odio expedita delectus dolor optio, natus,
-          minus, eos repellat. Aut exercitationem molestias beatae consectetur
-          est ea possimus nesciunt.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+          consequatur quo cum dignissimos modi possimus sapiente praesentium
+          recusandae nesciunt quisquam officia, at voluptates ducimus eos
+          deleniti aperiam voluptatem suscipit dolorem!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, natus
+          eum officiis dolorum enim laborum dolore tenetur nemo quidem
+          laboriosam ea id itaque cupiditate saepe, ab temporibus praesentium
+          inventore? Ducimus.
         </p>
       </div>
+    </div>
+    <div>
+      <img src="" alt="" />
     </div>
   </div>
 );

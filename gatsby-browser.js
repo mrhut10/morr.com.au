@@ -5,3 +5,6 @@
  */
 
 // Self host fonts using Typefaces.js https://github.com/KyleAMathews/typefaces
+
+// Load Metropolis typeface
+require('typeface-metropolis');

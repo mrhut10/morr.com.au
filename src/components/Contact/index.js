@@ -1,28 +1,55 @@
 import React from 'react';
-import Image from './Image';
-
+import { graphql, StaticQuery } from 'gatsby';
 import Form from '../Form';
 
 const Contact = () => (
-  <div id="contact" className="flex flex-wrap-reverse">
-    <div className="flex h-128 md:h-auto overflow-hidden w-full md:w-1/2">
-      <div className="h-full w-full relative">
-        <div className="image-container">
-          <Image />
+  <StaticQuery
+    query={graphql`
+      query ContactSectionQuery {
+        site {
+          siteMetadata {
+            email
+          }
+        }
+      }
+    `}
+    render={data => (
+      <div
+        id="contact"
+        className="flex flex-wrap items-center max-w-1920px mx-auto w-full"
+      >
+        <div className="p-4 w-full md:w-1/2">
+          <h2 className="font-bold text-green-brand text-4xl uppercase">
+            Contact
+          </h2>
+          <div className="border-green-brand border-l-4 max-w-lg pl-4 text-gray-600">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui at
+              corrupti consectetur hic iusto voluptatem officiis. Quod quis nemo
+              error corporis laboriosam! Consequuntur dolore reprehenderit nihil
+              voluptates quae autem ex.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              sit enim voluptas reprehenderit veniam aut est iste expedita
+              magnam incidunt quibusdam cumque iusto, cupiditate sequi quam!
+              Tempore voluptatem nesciunt ad?
+            </p>
+            <p className="font-bold">
+              Send email to{' '}
+              <a href={`mailto:${data.site.siteMetadata.email}`}>
+                {data.site.siteMetadata.email}
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className="p-4 w-full md:w-1/2">
+          <h3 className="font-bold mb-3 text-lg uppercase">Enquiry</h3>
+          <Form />
         </div>
       </div>
-    </div>
-    <div className="flex items-center justify-center w-full md:w-1/2">
-      <div className="max-w-md px-4 py-24 w-full">
-        <h2 className="font-bold mb-4 text-4xl text-gray-800">Contact</h2>
-        <p>
-          Send us a photo and we will do a quote for you without the need to
-          bring your car in!
-        </p>
-        <Form />
-      </div>
-    </div>
-  </div>
+    )}
+  />
 );
 
 export default Contact;
