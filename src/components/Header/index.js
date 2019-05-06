@@ -22,18 +22,18 @@ const Header = () => (
       }
     `}
     render={data => (
-      <header className="bg-green-brand md:flex items-center leading-none py-2 relative text-white w-full">
-        <div className="flex items-center max-w-1920px mx-auto w-full">
+      <header className="bg-green-brand md:flex items-center leading-none py-2 relative sticky text-white top-0 w-full z-50">
+        <div className="flex flex-wrap items-center max-w-1920px mx-auto w-full">
           <div className="flex justify-between w-full md:w-auto">
             <Link
               to="/"
-              className="flex font-bold items-center no-underline px-4 text-4xl uppercase"
+              className="flex font-bold items-center no-underline px-4 sm:px-12 text-4xl uppercase"
             >
               Morr
             </Link>
 
             <button
-              className="flex md:hidden items-center justify-center p-4"
+              className="flex md:hidden items-center justify-center p-4 sm:px-12"
               onClick={handleClick}
               type="button"
             >
@@ -56,10 +56,15 @@ const Header = () => (
             <NavLink link="/#projects" title="Projects" />
             <NavLink link="/#contact" title="Contact" />
             <a
-              className="bg-white font-bold inline-block ml-2 mr-4 mt-2 md:mt-0 p-2 text-green-brand uppercase"
+              className="border-green-400 border-t md:border-none flex text-sm"
               href={`tel:${data.site.siteMetadata.phone}`}
             >
-              Phone: {data.site.siteMetadata.phoneFormatted}
+              <span
+                className="bg-white font-bold inline-block ml-4 sm:ml-12 md:ml-3 mr-4 sm:mr-12 mt-2 md:mt-0 p-2 text-green-brand uppercase"
+                style={{ whiteSpace: `nowrap` }}
+              >
+                Phone: {data.site.siteMetadata.phoneFormatted}
+              </span>
             </a>
           </nav>
         </div>
@@ -71,7 +76,7 @@ const Header = () => (
 const NavLink = props => (
   <Link
     to={props.link}
-    className="hover:bg-green-400 block border-green-400 border-t md:border-none p-2 text-sm tracking-wide"
+    className="hover:bg-green-400 block border-green-400 border-t md:border-none px-4 sm:px-12 md:px-3 py-2 text-sm tracking-wide"
   >
     {props.title}
   </Link>

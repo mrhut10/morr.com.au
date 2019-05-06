@@ -4,13 +4,37 @@
   @apply w-full;
 }
 
-.image-container > .gatsby-image-wrapper {
-  @apply h-full;
-  @apply w-full;
-}
-
 .full-bleed {
   width: 100vw;
   margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.flinder-street-station {
+  @apply -mb-24 !important;
+  @apply z-20 !important;
+}
+
+@screen md {
+  .flinder-street-station {
+    position: absolute !important;
+    height: 360px !important;
+    width: 480px !important;
+    transform: translateY(-28px) !important;
+    @apply top-0 !important;
+    @apply mx-auto !important;
+  }
+}
+
+.triangle::after {
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
+  border-style: solid;
+  border-width: 31.2px 18px 0 18px;
+  height: 0;
+  width: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
   transform: translateX(-50%);
 }

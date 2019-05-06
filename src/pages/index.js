@@ -1,39 +1,24 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
-import About from '../components/About';
-import Contact from '../components/Contact';
+import AboutSection from '../components/AboutSection';
+import ProjectsSection from '../components/ProjectsSection';
+import ContactSection from '../components/ContactSection';
+import Location from '../components/Location';
 
-class IndexPage extends React.Component {
-  render() {
-    const { email, phone, phoneFormatted } = this.props.data.site.siteMetadata;
-
-    return (
-      <>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <Hero />
-        <Layout>
-          <About />
-          <Contact />
-        </Layout>
-      </>
-    );
-  }
-}
-
-export const query = graphql`
-  query IndexPageQuery {
-    site {
-      siteMetadata {
-        email
-        phone
-        phoneFormatted
-      }
-    }
-  }
-`;
+const IndexPage = () => (
+  <>
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <Hero />
+    <Layout>
+      <AboutSection />
+      <ProjectsSection />
+      <ContactSection />
+      <Location />
+    </Layout>
+  </>
+);
 
 export default IndexPage;

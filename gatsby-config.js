@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Morr Homes and Projects`,
     description: ``,
+    address: `Shop 3/146 Gordon Street`,
+    googleMaps: `https://goo.gl/maps/R4fNswoGPU3JAmF37`,
     email: `admin@morrproperty.com.au`, // used in GraphQL queries so address only needs to be entered in one place
     phone: `+61265839618`, // e.g. +61400000000
     phoneFormatted: `02 6583 9618`, // e.g. 0400 000 000

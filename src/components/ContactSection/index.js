@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Form from '../Form';
 
-const Contact = () => (
+const ContactSection = () => (
   <StaticQuery
     query={graphql`
       query ContactSectionQuery {
@@ -52,4 +52,4 @@ const Contact = () => (
   />
 );
 
-export default Contact;
+export default ContactSection;
