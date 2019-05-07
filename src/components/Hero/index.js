@@ -1,7 +1,9 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Image from './Image';
+import Logo from '../../images/logo-vertical-lockup.svg';
 
 const Hero = () => (
   <StaticQuery
@@ -18,14 +20,13 @@ const Hero = () => (
       }
     `}
     render={data => (
-      <div
-        className="flex font-bold font-sans overflow-hidden relative text-green-brand w-full"
-        style={{ minHeight: `50vh` }}
-      >
+      <div className="flex font-bold font-sans overflow-hidden relative text-green-brand w-full">
         <Image />
-        <div className="flex flex-col max-w-1920px mx-auto p-4 sm:px-12 relative w-full">
+        <div className="absolute flex flex-col inset-0 max-w-1920px mx-auto p-4 sm:px-12 w-full">
           <div className="flex items-center justify-between">
-            <h1 className="text-3xl sm:text-5xl uppercase">Morr</h1>
+            <h1 className="text-3xl sm:text-5xl uppercase">
+              <img className="h-10 py-1" src={Logo} alt="Morr logo." />
+            </h1>
             <nav className="text-sm">
               <Link to="/projects" className="uppercase">
                 Our Latest Projects
@@ -44,14 +45,18 @@ const Hero = () => (
                 Deliver
               </span>
             </div>
-            <Link className="bg-white leading-none px-2 text-2xl" to="/#about">
+            <AnchorLink
+              offset="56"
+              className="bg-white leading-none px-2 text-2xl"
+              href="#about"
+            >
               <span
                 className="inline-block"
                 style={{ transform: `rotate(90deg) translateY(-5%)` }}
               >
                 &raquo;
               </span>
-            </Link>
+            </AnchorLink>
           </div>
         </div>
       </div>
