@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 
+import Logo from '../../images/logo-type.svg';
+
 const handleClick = e => {
   e.preventDefault();
   const element = document.getElementById('nav');
@@ -22,14 +24,14 @@ const Header = () => (
       }
     `}
     render={data => (
-      <header className="bg-green-brand md:flex items-center leading-none py-2 relative sticky text-white top-0 w-full z-50">
+      <header className="bg-green-brand md:flex items-center leading-none py-1 relative shadow sticky text-white top-0 w-full z-50">
         <div className="flex flex-wrap items-center max-w-1920px mx-auto w-full">
           <div className="flex justify-between w-full md:w-auto">
             <Link
               to="/"
-              className="flex font-bold items-center no-underline px-4 sm:px-12 text-4xl uppercase"
+              className="flex font-bold items-center no-underline px-4 sm:pl-12 text-4xl uppercase"
             >
-              Morr
+              <img className="h-12 py-2" src={Logo} alt="" />
             </Link>
 
             <button
