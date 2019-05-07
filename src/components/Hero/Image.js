@@ -28,8 +28,11 @@ const Image = () => (
     `}
     render={data => (
       <Img
-        className="h-full w-full"
-        style={{ position: `absolute` }}
+        style={{
+          height: `85vh`,
+          minWidth: `100%`,
+        }}
+        imgStyle={{ objectPosition: `top` }}
         fluid={data.placeholderImage.childImageSharp.fluid}
       />
     )}
