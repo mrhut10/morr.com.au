@@ -23,7 +23,12 @@ const Footer = () => (
         <div className="max-w-1920px mx-auto w-full">
           <div className="flex flex-wrap items-center">
             <div className="p-4 mx-auto w-1/2 sm:w-1/3">
-              <img className="w-full" src={Logo} alt="" />
+              <img
+                className="w-full"
+                style={{ maxWidth: `256px` }}
+                src={Logo}
+                alt="Morr logo."
+              />
             </div>
             <div className="p-4 text-right w-full sm:w-2/3">
               <nav className="mb-4">
