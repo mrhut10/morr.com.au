@@ -20,7 +20,7 @@ const Hero = () => (
       }
     `}
     render={data => (
-      <div className="flex font-bold font-sans overflow-hidden relative text-green-brand w-full">
+      <div className="flex font-bold font-sans overflow-hidden relative text-green-500 w-full">
         <Image />
         <div className="absolute flex flex-col inset-0 max-w-1920px mx-auto p-4 sm:px-12 w-full">
           <div className="flex items-center justify-between">
@@ -28,7 +28,7 @@ const Hero = () => (
               <img className="h-10 py-1" src={Logo} alt="Morr logo." />
             </h1>
             <nav className="text-sm">
-              <Link to="/projects" className="uppercase">
+              <Link to="/projects" className="block text-right uppercase">
                 Our Latest Projects
               </Link>
             </nav>

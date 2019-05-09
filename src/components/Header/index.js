@@ -24,7 +24,7 @@ const Header = () => (
       }
     `}
     render={data => (
-      <header className="bg-green-brand md:flex items-center leading-none py-1 relative shadow sticky text-white top-0 w-full z-50">
+      <header className="bg-green-500 md:flex items-center leading-none py-1 relative shadow sticky text-white top-0 w-full z-50">
         <div className="flex flex-wrap items-center max-w-1920px mx-auto w-full">
           <div className="flex justify-between w-full md:w-auto">
             <Link
@@ -62,7 +62,7 @@ const Header = () => (
               href={`tel:${data.site.siteMetadata.phone}`}
             >
               <span
-                className="bg-white font-bold inline-block ml-4 sm:ml-12 md:ml-3 mr-4 sm:mr-12 mt-2 md:mt-0 p-2 text-green-brand uppercase"
+                className="bg-white font-bold inline-block mb-1 md:mb-0 ml-4 sm:ml-12 md:ml-3 mr-4 sm:mr-12 mt-2 md:mt-0 p-2 text-green-500 uppercase"
                 style={{ whiteSpace: `nowrap` }}
               >
                 Phone: {data.site.siteMetadata.phoneFormatted}

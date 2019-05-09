@@ -19,18 +19,18 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <footer className="bg-green-brand text-white">
+      <footer className="bg-green-500 p-4 sm:px-12 text-white">
         <div className="max-w-1920px mx-auto w-full">
           <div className="flex flex-wrap items-center">
-            <div className="p-4 mx-auto w-1/2 sm:w-1/3">
+            <div className="mx-auto w-1/2 sm:w-1/3">
               <img
-                className="w-full"
+                className="pr-4 w-full"
                 style={{ maxWidth: `256px` }}
                 src={Logo}
                 alt="Morr logo."
               />
             </div>
-            <div className="p-4 text-right w-full sm:w-2/3">
+            <div className="text-right w-full sm:w-2/3">
               <nav className="mb-4">
                 <Link className="ml-4" to="/">
                   Home

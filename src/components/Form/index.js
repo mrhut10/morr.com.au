@@ -59,7 +59,7 @@ export default class ContactForm extends React.Component {
               Name:
             </span>
             <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-brand"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-500"
               id="name"
               name="name"
               onChange={this.handleChange}
@@ -76,7 +76,7 @@ export default class ContactForm extends React.Component {
               Email address:
             </span>
             <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-brand"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-500"
               id="email"
               name="email"
               onChange={this.handleChange}
@@ -93,7 +93,7 @@ export default class ContactForm extends React.Component {
               Phone number:
             </span>
             <input
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-brand"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-500"
               id="phone"
               name="phone"
               onChange={this.handleChange}
@@ -109,7 +109,7 @@ export default class ContactForm extends React.Component {
               Message:
             </span>
             <textarea
-              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-brand"
+              className="appearance-none bg-white border-2 hover:bg-gray-100 leading-tight px-3 py-2 rounded-none text-gray-700 w-full focus:outline-none focus:border-green-500"
               id="message"
               name="message"
               onChange={this.handleChange}
@@ -122,7 +122,7 @@ export default class ContactForm extends React.Component {
         <div className="mb-6">
           {/* Submit */}
           <button
-            className="bg-green-brand hover:bg-green-400 cursor-pointer font-semibold leading-none px-4 py-2 text-white text-xs tracking-wide uppercase"
+            className="bg-green-500 hover:bg-green-400 cursor-pointer font-semibold leading-none px-4 py-2 text-white text-xs tracking-wide uppercase"
             type="submit"
           >
             Send

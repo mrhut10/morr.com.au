@@ -19,10 +19,10 @@ const ContactSection = () => (
         className="flex flex-wrap items-center max-w-1920px mx-auto w-full"
       >
         <div className="p-4 w-full md:w-1/2">
-          <h2 className="font-bold text-green-brand text-4xl uppercase">
+          <h2 className="font-bold text-green-500 text-4xl uppercase">
             Contact
           </h2>
-          <div className="border-green-brand border-l-4 max-w-lg pl-4 text-gray-600">
+          <div className="border-green-500 border-l-4 max-w-lg pl-4 text-gray-600">
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui at
               corrupti consectetur hic iusto voluptatem officiis. Quod quis nemo

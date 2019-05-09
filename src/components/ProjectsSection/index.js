@@ -21,16 +21,16 @@ const ProjectSection = () => (
       }
     `}
     render={data => (
-      <div className="bg-green-brand flex flex-wrap-reverse mb-12 px-8 py-16 relative text-white">
+      <div className="bg-green-500 flex flex-wrap-reverse mb-12 px-8 py-16 relative text-white">
         <div className="w-full lg:w-1/2">
           <Img
             className="flinder-street-station"
             fluid={data.flindersStreetStation.childImageSharp.fluid}
           />
         </div>
-        <div className="p-4 w-full lg:w-1/2">
-          <h2 className="flex font-bold justify-center leading-none mb-8 lg:mb-0 text-5xl uppercase">
-            <Link className="triangle" to="/projects">
+        <div className="flex justify-center p-4 w-full lg:w-1/2">
+          <h2 className="triangle font-bold leading-none mb-16 lg:mb-0 text-5xl uppercase">
+            <Link to="/projects">
               <span>Our </span>
               <br className="hidden lg:block" />
               <span>Latest </span>
