@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
-const NotFoundPage = () => (
+const SuccessPage = () => (
   <Layout>
-    <SEO title="404: Page Not Found" />
+    <SEO title="Success: message sent" />
     <div className="flex flex-1 items-center justify-center mx-auto w-full">
       <div className="max-w-sm p-4">
         <h2 className="font-bold leading-none mb-2 pt-2 text-4xl text-green-600">
-          404: Page Not Found
+          Form submitted successfully!
         </h2>
         <p className="mb-4">
           Thank you for your message. We will get back to you as soon as we can.
@@ -53,4 +52,4 @@ const Icon = () => (
   </svg>
 );
 
-export default NotFoundPage;
+export default SuccessPage;
