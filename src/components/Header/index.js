@@ -54,9 +54,9 @@ const Header = () => (
             className="hidden md:flex md:flex-1 md:items-center md:justify-end relative w-full md:w-auto"
           >
             <NavLink link="/" title="Home" />
-            <NavLink link="/#about" title="About&nbsp;Us" />
-            <NavLink link="/#projects" title="Projects" />
-            <NavLink link="/#contact" title="Contact" />
+            <NavLink link="/about" title="About&nbsp;Us" />
+            <NavLink link="/projects" title="Projects" />
+            <NavLink link="/contact" title="Contact" />
             <a
               className="border-green-400 border-t md:border-none flex text-sm"
               href={`tel:${data.site.siteMetadata.phone}`}
@@ -75,12 +75,12 @@ const Header = () => (
   />
 );
 
-const NavLink = props => (
+const NavLink = ({ link, title }) => (
   <Link
-    to={props.link}
+    to={link}
     className="hover:bg-green-400 block border-green-400 border-t md:border-none px-4 sm:px-12 md:px-3 py-2 text-sm tracking-wide"
   >
-    {props.title}
+    {title}
   </Link>
 );
 

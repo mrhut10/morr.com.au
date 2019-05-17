@@ -1,9 +1,11 @@
 import React from 'react';
 
+import AboutImage from '../../images/6-35-black-caviar.jpg';
+
 const AboutSection = () => (
   <div
     id="about"
-    className="flex flex-wrap items-center max-w-1920px my-8 md:mb-16 mx-auto w-full"
+    className="flex flex-wrap max-w-1920px my-8 md:mb-16 mx-auto w-full"
   >
     <div className="p-4 sm:px-12 w-full md:w-1/2">
       <h2 className="font-bold text-green-500 text-4xl uppercase">About</h2>
@@ -19,12 +21,12 @@ const AboutSection = () => (
         </p>
       </div>
     </div>
-    <div className="p-4 sm:px-12 w-full md:w-1/2">
-      <p>
-        {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod,
-        magni tenetur dolores natus at consequuntur esse cum accusantium tempore
-        asperiores quae veniam aperiam id a cupiditate iure aut quibusdam. */}
-      </p>
+    <div className="relative w-full md:w-1/2">
+      <img
+        className="md:absolute md:h-full object-cover p-4 md:pl-0 sm:px-12 w-full"
+        src={AboutImage}
+        alt=""
+      />
     </div>
   </div>
 );
