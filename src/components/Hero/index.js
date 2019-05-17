@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 
 import Image from './Image';
 import Logo from '../../images/logo-vertical-lockup.svg';
@@ -47,14 +48,11 @@ const Hero = () => (
             </div>
             <AnchorLink
               offset="56"
-              className="bg-white leading-none px-2 text-2xl"
+              className="bg-white leading-none px-2 py-1"
               href="#about"
             >
-              <span
-                className="inline-block"
-                style={{ transform: `rotate(90deg) translateY(-5%)` }}
-              >
-                &raquo;
+              <span className="flex items-center justify-center">
+                <FaAngleDoubleDown />
               </span>
             </AnchorLink>
           </div>
