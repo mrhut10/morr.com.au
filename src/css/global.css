@@ -40,7 +40,10 @@
   transform: translateX(-50%);
 }
 
+ul .slide-visible:nth-child(2) .gatsby-image-wrapper {
+  @apply rounded;
+}
+
 ul .slide-visible:not(:nth-child(2)) .gatsby-image-wrapper {
-  transform: scale(0.5) !important;
-  overflow: visible !important;
+  transform: scaleY(0.75);
 }
