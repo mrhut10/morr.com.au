@@ -3,6 +3,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import { FaAngleDoubleDown, FaAngleDoubleRight } from 'react-icons/fa';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Carousel from 'nuka-carousel';
 
 import Layout from '../../components/Layout';
 import SEO from '../../components/SEO';
@@ -20,6 +21,18 @@ const BlackCaviarPage = () => (
       query BlackCaviarPageQuery {
         hero: file(relativePath: { eq: "6-35-black-caviar.jpg" }) {
           ...BlackCaviarPageFluidImage
+        }
+        allFile(filter: { dir: { regex: "/black-caviar/" } }) {
+          edges {
+            node {
+              id
+              childImageSharp {
+                fluid(maxWidth: 5000) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
+          }
         }
       }
     `}
@@ -57,7 +70,7 @@ const BlackCaviarPage = () => (
               <p className="mt-4">
                 <a
                   className="flex font-bold items-center text-green-500 uppercase"
-                  href="#"
+                  href=""
                 >
                   View next project{' '}
                   <FaAngleDoubleRight className="text-xs ml-1" />
@@ -82,6 +95,19 @@ const BlackCaviarPage = () => (
               </p>
             </div>
           </div>
+          <Carousel
+            slidesToShow={3}
+            // cellSpacing={16}
+            dragging
+          >
+            {data.allFile.edges.map(edge => (
+              <Img
+                fluid={edge.node.childImageSharp.fluid}
+                key={edge.node.id}
+                alt=""
+              />
+            ))}
+          </Carousel>
         </section>
       </Layout>
     )}
