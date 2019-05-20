@@ -51,10 +51,10 @@ const ProjectsPage = () => (
           id="projects"
           className="flex flex-wrap max-w-1920px my-8 md:mb-16 mx-auto w-full"
         >
-          <h1 className="font-bold px-4 sm:px-12 text-green-500 text-4xl uppercase w-full">
+          <h1 className="font-bold px-4 sm:px-12 lg:px-24 text-green-500 text-4xl uppercase w-full">
             Projects
           </h1>
-          <div className="p-4 sm:px-12 w-full md:w-1/2">
+          <div className="p-4 sm:px-12 lg:px-24 w-full md:w-1/2">
             <div className="border-green-500 border-l-4 pl-4 text-gray-600 lg:text-xl">
               <p className="mt-4">
                 <Link
@@ -89,9 +89,5 @@ const ProjectsPage = () => (
     )}
   />
 );
-
-export const frontmatter = {
-  title: 'Black Caviar Pde',
-};
 
 export default ProjectsPage;

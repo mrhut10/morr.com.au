@@ -56,10 +56,10 @@ const BlackCaviarPage = () => (
           id="black-caviar"
           className="flex flex-wrap items-center max-w-1920px my-8 md:mb-16 mx-auto w-full"
         >
-          <h1 className="font-bold px-4 sm:px-12 text-green-500 text-4xl uppercase w-full">
+          <h1 className="font-bold px-4 sm:px-12 lg:pl-24 text-green-500 text-4xl uppercase w-full">
             Black Caviar
           </h1>
-          <div className="p-4 sm:px-12 w-full md:w-1/2">
+          <div className="p-4 sm:px-12 lg:pl-24 w-full md:w-1/2">
             <div className="border-green-500 border-l-4 pl-4 text-gray-600 lg:text-xl">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -78,7 +78,7 @@ const BlackCaviarPage = () => (
               </p>
             </div>
           </div>
-          <div className="flex justify-center p-4 sm:px-12 lg:text-xl w-full md:w-1/2">
+          <div className="flex justify-center p-4 sm:px-12  lg:pr-24 lg:text-xl w-full md:w-1/2">
             <div className="border-4 border-green-500 md:max-w-sm p-4">
               <p>
                 <strong>Value:</strong> $58m

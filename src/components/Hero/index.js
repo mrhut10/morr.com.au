@@ -23,7 +23,7 @@ const Hero = () => (
     render={data => (
       <div className="flex font-bold font-sans overflow-hidden relative text-green-500 w-full">
         <Image />
-        <div className="absolute flex flex-col inset-0 max-w-1920px mx-auto p-4 sm:px-12 w-full">
+        <div className="absolute flex flex-col inset-0 max-w-1920px mx-auto p-4 sm:px-12 lg:px-24 w-full">
           <div className="flex items-center justify-between">
             <h1 className="text-3xl sm:text-5xl uppercase">
               <img className="h-10 py-1" src={Logo} alt="Morr logo." />

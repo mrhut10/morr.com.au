@@ -7,7 +7,7 @@ const AboutSection = () => (
     id="about"
     className="flex flex-wrap max-w-1920px my-8 md:mb-16 mx-auto w-full"
   >
-    <div className="p-4 sm:px-12 w-full md:w-1/2">
+    <div className="p-4 sm:px-12 lg:pl-24 w-full md:w-1/2">
       <h2 className="font-bold text-green-500 text-4xl uppercase">About</h2>
       <div className="border-green-500 border-l-4 max-w-lg pl-4 text-gray-600">
         <p>
@@ -23,7 +23,7 @@ const AboutSection = () => (
     </div>
     <div className="relative w-full md:w-1/2">
       <img
-        className="md:absolute md:h-full object-cover p-4 md:pl-0 sm:px-12 w-full"
+        className="md:absolute md:h-full object-cover p-4 md:pl-0 sm:pr-12 lg:pr-24 w-full"
         src={AboutImage}
         alt=""
       />

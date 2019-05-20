@@ -22,7 +22,7 @@ const ProjectSection = () => (
       }
     `}
     render={data => (
-      <div className="bg-green-500 flex flex-wrap-reverse mb-12 px-8 py-16 relative text-white">
+      <div className="bg-green-500 flex flex-wrap-reverse mb-12 px-4 sm:px-12 xl:px-24 py-16 relative text-white">
         <div className="w-full lg:w-1/2">
           <div
             className="flinder-street-station bg-black mx-auto relative shadow-xl"

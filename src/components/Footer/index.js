@@ -19,50 +19,48 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <footer className="bg-green-500 p-4 sm:px-12 text-white">
+      <footer className="bg-green-500 p-4 sm:px-12 lg:px-24 text-white">
         <div className="max-w-1920px mx-auto w-full">
-          <div className="flex flex-wrap items-center">
-            <div className="mx-auto w-1/2 sm:w-1/3">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start">
+            <div className="mb-4 w-1/2 sm:w-1/3">
               <img
-                className="pr-4 w-full"
+                className="sm:pr-4 w-full"
                 style={{ maxWidth: `256px` }}
                 src={Logo}
                 alt="Morr logo."
               />
             </div>
-            <div className="text-right w-full sm:w-2/3">
+            <div className="text-center sm:text-right w-full sm:w-2/3">
               <nav className="mb-4">
-                <Link className="ml-4" to="/">
+                <Link className="ml-6" to="/">
                   Home
                 </Link>
-                <Link className="ml-4" to="/about">
+                <Link className="ml-6" to="/about">
                   About
                 </Link>
-                <Link className="ml-4" to="/projects">
+                <Link className="ml-6" to="/projects">
                   Projects
                 </Link>
-                <Link className="ml-4" to="/contact">
+                <Link className="ml-6" to="/contact">
                   Contact
                 </Link>
               </nav>
-              <div className="font-bold uppercase">
-                <p>
-                  Contact:{' '}
-                  <a href={`email:${data.site.siteMetadata.email}`}>
-                    {data.site.siteMetadata.email}
-                  </a>
-                </p>
-                <p>
-                  Head Office:{' '}
-                  <a href={data.site.siteMetadata.googleMaps}>
-                    {data.site.siteMetadata.address}
-                  </a>
-                </p>
-                <p className="flex items-center justify-end">
-                  Connect with us <FaInstagram className="ml-1 inline-block" />{' '}
-                  <FaFacebookSquare className="ml-1 inline-block" />
-                </p>
-              </div>
+              <p>
+                <span className="font-bold">Contact:</span>{' '}
+                <a href={`email:${data.site.siteMetadata.email}`}>
+                  {data.site.siteMetadata.email}
+                </a>
+              </p>
+              <p>
+                <span className="font-bold">Head Office:</span>{' '}
+                <a href={data.site.siteMetadata.googleMaps}>
+                  {data.site.siteMetadata.address}
+                </a>
+              </p>
+              <p className="flex items-center justify-center sm:justify-end">
+                Connect with us <FaInstagram className="ml-1 inline-block" />{' '}
+                <FaFacebookSquare className="ml-1 inline-block" />
+              </p>
             </div>
           </div>
           <p className="flex flex-wrap items-center justify-center mb-0 p-4 text-center text-xs w-full">

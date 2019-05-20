@@ -18,7 +18,7 @@ const ContactSection = () => (
         id="contact"
         className="flex flex-wrap items-center max-w-1920px mx-auto w-full"
       >
-        <div className="p-4 w-full md:w-1/2">
+        <div className="p-4 sm:px-12 lg:px-24 w-full md:w-1/2">
           <h2 className="font-bold text-green-500 text-4xl uppercase">
             Contact
           </h2>

@@ -29,7 +29,7 @@ const Header = () => (
           <div className="flex justify-between w-full md:w-auto">
             <Link
               to="/"
-              className="flex font-bold items-center no-underline px-4 sm:pl-12 text-4xl uppercase"
+              className="flex font-bold items-center no-underline px-4 sm:pl-12 lg:pl-24 text-4xl uppercase"
             >
               <img className="h-12 py-2" src={Logo} alt="" />
             </Link>
@@ -62,7 +62,7 @@ const Header = () => (
               href={`tel:${data.site.siteMetadata.phone}`}
             >
               <span
-                className="bg-white font-bold inline-block mb-1 md:mb-0 ml-4 sm:ml-12 md:ml-3 mr-4 sm:mr-12 mt-2 md:mt-0 p-2 text-green-500 uppercase"
+                className="bg-white font-bold inline-block mb-1 md:mb-0 ml-4 sm:ml-12 md:ml-3 mr-4 sm:mr-12 lg:mr-24 mt-2 md:mt-0 p-2 text-green-500 uppercase"
                 style={{ whiteSpace: `nowrap` }}
               >
                 Phone: {data.site.siteMetadata.phoneFormatted}
