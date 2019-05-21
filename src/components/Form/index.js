@@ -46,9 +46,13 @@ export default class ContactForm extends React.Component {
         {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
         <input type="hidden" name="form-name" value="contact" />
         <div hidden>
-          <label>
+          <label htmlFor="bot-field">
             Don’t fill this out:{' '}
-            <input name="bot-field" onChange={this.handleChange} />
+            <input
+              id="bot-field"
+              name="bot-field"
+              onChange={this.handleChange}
+            />
           </label>
         </div>
 

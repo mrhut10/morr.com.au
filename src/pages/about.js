@@ -1,7 +1,7 @@
 import React from 'react';
-import { graphql, Link, StaticQuery } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-import { FaAngleDoubleDown, FaAngleDoubleRight } from 'react-icons/fa';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Layout from '../components/Layout';

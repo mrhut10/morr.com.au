@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
 
 import Logo from '../../images/logo-type.svg';
 
@@ -83,5 +84,10 @@ const NavLink = ({ link, title }) => (
     {title}
   </Link>
 );
+
+NavLink.propTypes = {
+  link: PropTypes.string,
+  title: PropTypes.string,
+};
 
 export default Header;
