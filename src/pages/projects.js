@@ -41,7 +41,7 @@ const ProjectsPage = () => (
           />
           <div className="absolute flex inset-0 items-end justify-center max-w-3xl mx-auto p-4">
             <div className="bg-white leading-none px-2 py-1">
-              <AnchorLink href="#projects">
+              <AnchorLink offset="56" href="#projects">
                 <FaAngleDoubleDown className="text-green-500" />
               </AnchorLink>
             </div>
