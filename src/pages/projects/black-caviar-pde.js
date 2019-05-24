@@ -95,7 +95,7 @@ const BlackCaviarPage = () => (
               </p>
             </div>
           </div>
-          <div id="carousel">
+          <div className="w-full" id="carousel">
             <Carousel
               renderBottomCenterControls={false}
               slidesToShow={3}
