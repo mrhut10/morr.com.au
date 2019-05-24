@@ -35,7 +35,7 @@ const ContactSection = () => (
               magnam incidunt quibusdam cumque iusto, cupiditate sequi quam!
               Tempore voluptatem nesciunt ad?
             </p>
-            <p className="font-bold">
+            <p className="font-bold text-gray-700">
               Send email to{' '}
               <a href={`mailto:${data.site.siteMetadata.email}`}>
                 {data.site.siteMetadata.email}
@@ -44,7 +44,9 @@ const ContactSection = () => (
           </div>
         </div>
         <div className="p-4 w-full md:w-1/2">
-          <h3 className="font-bold mb-3 text-lg uppercase">Enquiry</h3>
+          <h3 className="font-bold mb-3 text-gray-700 text-lg uppercase">
+            Enquiry
+          </h3>
           <Form />
         </div>
       </div>
