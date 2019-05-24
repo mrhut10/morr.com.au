@@ -78,7 +78,7 @@ const BlackCaviarPage = () => (
               </p>
             </div>
           </div>
-          <div className="flex justify-center p-4 sm:px-12  lg:pr-24 lg:text-xl w-full md:w-1/2">
+          <div className="flex justify-center mb-8 p-4 sm:px-12 lg:pr-24 lg:text-xl w-full md:w-1/2">
             <div className="border-4 border-green-500 md:max-w-sm p-4">
               <p>
                 <strong>Value:</strong> $58m
@@ -95,19 +95,21 @@ const BlackCaviarPage = () => (
               </p>
             </div>
           </div>
-          <Carousel
-            renderBottomCenterControls={false}
-            slidesToShow={3}
-            wrapAround
-          >
-            {data.allFile.edges.map(edge => (
-              <Img
-                fluid={edge.node.childImageSharp.fluid}
-                key={edge.node.id}
-                alt=""
-              />
-            ))}
-          </Carousel>
+          <div id="carousel">
+            <Carousel
+              renderBottomCenterControls={false}
+              slidesToShow={3}
+              wrapAround
+            >
+              {data.allFile.edges.map(edge => (
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  key={edge.node.id}
+                  alt=""
+                />
+              ))}
+            </Carousel>
+          </div>
         </section>
       </Layout>
     )}
