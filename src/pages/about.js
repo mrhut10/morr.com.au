@@ -39,7 +39,7 @@ const AboutPage = () => (
           />
           <div className="absolute flex inset-0 items-end justify-center max-w-3xl mx-auto p-4">
             <div className="bg-white leading-none px-2 py-1">
-              <AnchorLink href="#about">
+              <AnchorLink offset="56" href="#about">
                 <FaAngleDoubleDown className="text-green-500" />
               </AnchorLink>
             </div>
@@ -58,7 +58,6 @@ const AboutPage = () => (
               style={{
                 columns: `320px 2`,
                 columnGap: `2rem`,
-                // maxWidth: `320px`,
               }}
             >
               <p className="mb-4">
@@ -97,18 +96,14 @@ const AboutPage = () => (
             <div className="max-w-xl mx-auto relative">
               <svg
                 className="absolute fill-current left-0 sm:-ml-12 -mt-12 top-0 w-24"
-                xmlns="http://www.w3.org/2000/svg"
-                fillRule="evenodd"
-                strokeLinejoin="round"
                 style={{ color: `hsla(360, 100%, 100%, .33)` }}
-                strokeMiterlimit="1.414"
-                clipRule="evenodd"
-                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
               >
-                <path
-                  fillRule="nonzero"
-                  d="M14.684 16.6c1.61 0 2.916-1.343 2.916-3 0-1.656-1.306-3-2.916-3-2.915 0-.972-5.799 2.916-5.799v-1.4C10.661 3.4 7.942 16.6 14.684 16.6zm-8.4 0c1.609 0 2.915-1.343 2.915-3 0-1.656-1.306-3-2.915-3-2.916 0-.973-5.799 2.915-5.799v-1.4C2.261 3.4-.458 16.6 6.284 16.6z"
-                />
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z" />
+                </g>
               </svg>
               <p className="text-center text-xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
