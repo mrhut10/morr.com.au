@@ -38,7 +38,7 @@ const BlackCaviarPage = () => (
     `}
     render={data => (
       <Layout>
-        <SEO title="Black Caviar" />
+        <SEO title="Black Caviar Pde" />
         <div className="relative">
           <Img
             style={{ height: `50vh`, minHeight: `22rem` }}
@@ -46,7 +46,7 @@ const BlackCaviarPage = () => (
           />
           <div className="absolute flex inset-0 items-end justify-center max-w-3xl mx-auto p-4">
             <div className="bg-white leading-none px-2 py-1">
-              <AnchorLink href="#black-caviar">
+              <AnchorLink offset="56" href="#black-caviar">
                 <FaAngleDoubleDown className="text-green-500" />
               </AnchorLink>
             </div>
@@ -57,7 +57,7 @@ const BlackCaviarPage = () => (
           className="flex flex-wrap items-center max-w-1920px my-8 md:mb-16 mx-auto w-full"
         >
           <h1 className="font-bold px-4 sm:px-12 lg:pl-24 text-green-500 text-4xl uppercase w-full">
-            Black Caviar
+            Black Caviar Pde
           </h1>
           <div className="p-4 sm:px-12 lg:pl-24 w-full md:w-1/2">
             <div className="border-green-500 border-l-4 pl-4 text-gray-600 lg:text-xl">
@@ -96,9 +96,9 @@ const BlackCaviarPage = () => (
             </div>
           </div>
           <Carousel
+            renderBottomCenterControls={false}
             slidesToShow={3}
-            // cellSpacing={16}
-            dragging
+            wrapAround
           >
             {data.allFile.edges.map(edge => (
               <Img

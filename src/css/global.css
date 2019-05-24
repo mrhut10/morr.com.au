@@ -40,10 +40,10 @@
   transform: translateX(-50%);
 }
 
-ul .slide-visible:nth-child(2) .gatsby-image-wrapper {
-  @apply rounded;
+.slider-list > *:not(.slide-visible:nth-child(2)) > * {
+  transform: scaleY(0.75);
 }
 
-ul .slide-visible:not(:nth-child(2)) .gatsby-image-wrapper {
-  transform: scaleY(0.75);
+.slider-list .slide-visible:nth-child(2) * {
+  @apply rounded;
 }
