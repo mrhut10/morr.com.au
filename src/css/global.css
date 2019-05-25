@@ -40,10 +40,15 @@
   transform: translateX(-50%);
 }
 
-.slider-list > *:not(.slide-visible:nth-child(2)) > * {
+.slider-centre {
   transform: scaleY(0.75);
 }
 
-.slider-list .slide-visible:nth-child(2) * {
-  @apply rounded;
+/*
+.slider-list > *:not(.slide-visible:nth-of-type(2)) > * {
+  transform: scaleY(0.75);
 }
+
+.slider-list .slide-visible:nth-of-type(2) * {
+  @apply rounded;
+} */
