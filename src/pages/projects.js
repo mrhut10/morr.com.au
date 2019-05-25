@@ -1,11 +1,13 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-import { FaAngleDoubleDown, FaAngleDoubleRight } from 'react-icons/fa';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import BlackCaviar from '../images/black-caviar/37-black-caviar-LR-2.jpg';
+import Foreshore from '../images/7b-foreshore/005.jpg';
 
 const ProjectsPage = () => (
   <StaticQuery
@@ -49,40 +51,72 @@ const ProjectsPage = () => (
         </div>
         <section
           id="projects"
-          className="flex flex-wrap max-w-1920px my-8 md:mb-16 mx-auto w-full"
+          className="flex flex-col max-w-1920px my-8 md:mb-16 mx-auto w-full"
         >
           <h1 className="font-bold px-4 sm:px-12 lg:px-24 text-green-500 text-4xl uppercase w-full">
             Projects
           </h1>
-          <div className="p-4 sm:px-12 lg:px-24 w-full md:w-1/2">
+          <div className="p-4 sm:px-12 lg:px-24">
             <div className="border-green-500 border-l-4 pl-4 text-gray-600 lg:text-xl">
-              <p className="mt-4">
-                <Link
-                  className="flex font-bold items-center text-green-500 uppercase"
-                  to="/projects/black-caviar-pde"
-                >
-                  Black Caviar Pde{' '}
-                  <FaAngleDoubleRight className="text-xs ml-1" />
-                </Link>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                vitae repudiandae odit corporis voluptates ab ducimus!
+                Consequuntur, unde rerum laboriosam aut possimus dolorum error?
+                Quaerat fugit totam vel repellendus itaque?
               </p>
             </div>
           </div>
-          <div className="flex justify-center p-4 sm:px-12 lg:text-xl w-full md:w-1/2">
-            {/* <div className="border-4 border-green-500 max-w-sm p-4">
-              <p>
-                <strong>Value:</strong> $58m
-              </p>
-              <p>
-                <strong>Client:</strong> Department of Economic Development,
-                Jobs, Transport and Resources Major Projects Victoria
-              </p>
-              <p>
-                <strong>Architect:</strong> Lovell Chen
-              </p>
-              <p>
-                <strong>Completion Date:</strong> July 2018
-              </p>
-            </div> */}
+          <div className="flex flex-wrap justify-between p-4 sm:px-12 lg:text-xl w-full">
+            <Link className="max-w-sm w-full" to="/projects/black-caviar-pde">
+              <img
+                className="h-48 object-cover w-full"
+                src={BlackCaviar}
+                alt=""
+              />
+              <div className="border-4 border-green-500 px-3 py-4 text-gray-600">
+                <h3 className="font-bold text-green-500 uppercase">
+                  Black Caviar
+                </h3>
+                <p>
+                  <strong>Value:</strong> $58m
+                </p>
+                <p>
+                  <strong>Client:</strong> Department of Economic Development,
+                  Jobs, Transport and Resources Major Projects Victoria
+                </p>
+                <p>
+                  <strong>Architect:</strong> Lovell Chen
+                </p>
+                <p>
+                  <strong>Completion date:</strong> July 2018
+                </p>
+              </div>
+            </Link>
+            <Link className="max-w-sm w-full" to="/projects/foreshore">
+              <img
+                className="h-48 object-cover w-full"
+                src={Foreshore}
+                alt=""
+              />
+              <div className="border-4 border-green-500 px-3 py-4 text-gray-600">
+                <h3 className="font-bold text-green-500 uppercase">
+                  Foreshore
+                </h3>
+                <p>
+                  <strong>Value:</strong> $58m
+                </p>
+                <p>
+                  <strong>Client:</strong> Department of Economic Development,
+                  Jobs, Transport and Resources Major Projects Victoria
+                </p>
+                <p>
+                  <strong>Architect:</strong> Lovell Chen
+                </p>
+                <p>
+                  <strong>Completion date:</strong> July 2018
+                </p>
+              </div>
+            </Link>
           </div>
         </section>
       </Layout>
