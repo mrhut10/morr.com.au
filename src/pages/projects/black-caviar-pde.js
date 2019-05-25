@@ -1,16 +1,12 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-import {
-  FaAngleDoubleDown,
-  FaAngleDoubleLeft,
-  FaAngleDoubleRight,
-} from 'react-icons/fa';
+import { FaAngleDoubleDown, FaAngleDoubleRight } from 'react-icons/fa';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Carousel from 'nuka-carousel';
 
 import Layout from '../../components/Layout';
 import SEO from '../../components/SEO';
+import Carousel from '../../components/Carousels/BlackCaviar';
 
 const BlackCaviarPage = () => (
   <StaticQuery
@@ -100,37 +96,7 @@ const BlackCaviarPage = () => (
             </div>
           </div>
           <div className="w-full" id="carousel">
-            <Carousel
-              renderBottomCenterControls={false}
-              slidesToShow={3}
-              wrapAround
-              renderCenterLeftControls={({ previousSlide }) => (
-                <button
-                  className="bg-white leading-none px-2 py-1"
-                  onClick={previousSlide}
-                  type="button"
-                >
-                  <FaAngleDoubleLeft className="text-green-500" />
-                </button>
-              )}
-              renderCenterRightControls={({ nextSlide }) => (
-                <button
-                  className="bg-white leading-none px-2 py-1"
-                  onClick={nextSlide}
-                  type="button"
-                >
-                  <FaAngleDoubleRight className="text-green-500" />
-                </button>
-              )}
-            >
-              {data.allFile.edges.map(edge => (
-                <Img
-                  fluid={edge.node.childImageSharp.fluid}
-                  key={edge.node.id}
-                  alt=""
-                />
-              ))}
-            </Carousel>
+            <Carousel data={data} />
           </div>
         </section>
       </Layout>
